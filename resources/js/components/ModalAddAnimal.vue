@@ -5,7 +5,7 @@
         <div class="modal-header">
           <slot name="header">
             <button class="modal-default-button" @click="$emit('cancelAnimal')">
-              <img src="images/close.svg" />
+              <img src="/images/close.svg" />
             </button>
           </slot>
         </div>

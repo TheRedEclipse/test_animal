@@ -5,14 +5,14 @@
         <div class="modal-header">
           <slot name="header">
             <button class="modal-default-button" @click="$emit('cancelDestroyAnimal')">
-              <img src="images/close.svg" />
+              <img src="/images/close.svg" />
             </button>
           </slot>
         </div>
         <div class="modal-body info">
           <slot name="body">
             <p>Питомец {{ animal.title }} умер? :(</p>
-            <img :src="'images/' + animal.animal_type.name + '.svg'">
+            <img :src="'/images/' + animal.animal_type.name + '.svg'">
             <p>Родился: {{ animal.born }}</p>
             <p>Тип: {{ animal.animal_type.title }}</p>
             <p>Коофицент роста: {{ animal.animal_type.growth_multiplier }}</p>

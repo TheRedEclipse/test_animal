@@ -1,6 +1,6 @@
 <template>
     <div @click="$emit('getAnimalDetails', animal)">
-             <img :src="'images/' + animal.animal_type.name + '.svg'" >
+             <img :src="'/images/' + animal.animal_type.name + '.svg'" >
     </div>
 </template>
 <script>

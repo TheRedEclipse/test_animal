@@ -2,12 +2,12 @@
   <div>
     <div class="dropdown">
       <button class="dropbtn">
-        <img class="dropbtnimg" src="images/plus.svg" />
+        <img class="dropbtnimg" src="/images/plus.svg" />
       </button>
       <div class="dropdown-content">
         <span v-for="(animalType, key) in animalTypes" :key="key">
           <button @click="addAnimal = animalType">
-            <img :src="'images/' + animalType.name + '.svg'" />
+            <img :src="'/images/' + animalType.name + '.svg'" />
           </button>
         </span>
       </div>
