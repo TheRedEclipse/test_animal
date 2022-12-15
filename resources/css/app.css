@@ -1,0 +1,213 @@
+
+html {
+  height: 100%;
+}
+body {
+  background: linear-gradient(180deg, #E0F7FA 0%, #80DEEA 100%);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+button, input {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.dropbtn {
+  position: relative;
+  color:#fff; 
+  background:#3E2723;
+  width: 48px;
+  height: 48px;
+  border-radius:100%;
+  margin: 50px 0 0 50px;
+}
+
+.dropbtn .dropbtnimg {
+  transition: transform 0.2s ease-in;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+  
+.dropdown-content {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 51px;
+  left: 72px;
+  min-width: 200px;
+  height: 48px;
+  padding-left: 50px;
+  background: #D7CCC8;
+  border-radius: 0px 8px 8px 0px;
+  transition: visibility 0s, opacity 0.5s linear;
+  }
+  
+.dropdown-content button {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 4px 4px 0 0;
+  border-radius:100%;
+  border: 2px solid #3E2723;
+  background-color: #f1f1f1;
+  transition: visibility 0.2s, opacity 0.5s linear;
+}
+
+.dropdown-content img {
+  height: 26px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 8px; 
+}
+  
+.dropdown-content button:hover {
+  opacity: 0.3;
+}
+  
+.dropdown:hover .dropdown-content {
+  visibility: visible;
+  opacity: 1;
+  
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #5a3a35;
+  z-index: 9999;
+}
+
+.dropdown:hover .dropbtn img {
+  transform: rotate(90deg);
+}
+
+.animal-container {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.animal {
+  align-self: center;
+  width: 10%;
+
+}
+
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  transition: opacity 0.3s ease;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-container {
+  width: 300px;
+  margin: 0px auto;
+  padding: 20px 30px;
+  background: linear-gradient(180deg, #E0F7FA 0%, #afafaf 100%);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+  transition: all 0.3s ease;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.modal-header h3 {
+  margin-top: 0;
+  color: #42b983;
+}
+
+.modal-body {
+  margin: 20px 0;
+}
+
+.modal-default-button {
+  float: right;
+}
+
+.modal-default-button img {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.2s ease-in;
+}
+
+.modal-default-button img:hover {
+  transform: rotate(90deg);
+}
+
+.modal-enter-from, .modal-leave-to {
+  opacity: 0;
+}
+
+.modal-enter-active .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.modal-footer button {
+  padding: 6px;
+  border-radius: 6px;
+  background: linear-gradient(to right, #58bd90 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+
+.modal-footer .red {
+  padding: 6px;
+  border-radius: 6px;
+  background: linear-gradient(to right, #bd5858 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+
+.modal-footer button:hover {
+  background-position: left bottom;
+}
+
+.modal-body input {
+  padding: 6px;
+  border-radius: 6px;
+  background-color: #eeeeee;
+}
+
+.info {
+  background-color: #eeeeee;
+  padding: 6px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.info-btn {
+  text-align: center;
+}
+
+.info-btn button {
+  margin: 4px
+}
